@@ -1,11 +1,11 @@
-body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #ffffff;
-    margin: 0;
-    padding: 0;
+:root {
+    --main-color: #3c2158e7;
+    --hover-color: #ffffff75;
 }
-header {
-    background-color: #004261e7;
+
+.nav {
+    display: flex;
+    background-color: var(--main-color);
     width: 100%;
     height: 120px;
     position: fixed;
@@ -14,32 +14,61 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}   
+
+ .nav-header {
     color: #ffffff;
     font-size: 50px;
     box-sizing: border-box;
 }
-h1 {
-    color: #ffffff;
-    font-size: 50px;
-    font-weight: lighter;
-}
-.nav {
-    display: flex;
+
+.nav-item {
     margin: 0;
-}
-.nav h3 {
     color: #ffffff;
     margin: 50px;
-    font-size: 25px;
+    font-size: 27px;
     font-weight: lighter;
 }
-.nav h3:hover {
-    color: #ffffff75;
+
+.nav-item:hover {
+    color: var(--hover-color);
     cursor: pointer;
 }
+
 footer {
     position: fixed;
     bottom: 0;
     left: 0;
     text-align: end;
+}
+
+@media screen and (max-width: 600px) {
+    .nav-header {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .nav {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+        font-size: 20px;
+    }
+
+    footer {
+        font-size: 14px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    body {
+        padding-top: 150px; 
+    }
 }
