@@ -1,22 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keziah's Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keziah's Portfolio</title>
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="nav">
-            <div class="nav-header">Keziah Corpuz</div>
-            <div class="nav-item">About</div>
-            <div class="nav-item">Projects</div>
-            <div class="nav-item">Contact</div>
-        </div>
-    </header>    
-    <footer>
-        <p>&copy; Keziah Corpuz, 2025</p>
-    </footer>
+  <header>
+    <div class="nav">
+      <div class="nav-header">Keziah Corpuz</div>
+      <div class="nav-item" id="about">About</div>
+      <div class="nav-item" id="projects">Projects</div>
+      <div class="nav-item" id="contact">Contact</div>
+    </div>
+  </header>
+
+  <!-- PROJECTS SECTION -->
+  <div class="section projects">
+    <div class="project-item">
+      <h2>Project 1</h2>
+      <p class="h2">Short description</p>
+      <button class="details-btn">Show details</button>
+      <p class="details-text" style="display:none;">Details about project 1...</p>
+    </div>
+    <div class="project-item">
+      <h2>Project 2</h2>
+      <p class="h2">Short description</p>
+      <button class="details-btn">Show details</button>
+      <p class="details-text" style="display:none;">Details about project 2...</p>
+    </div>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <div class="section contact">
+    <h3>Contact Form</h3>
+    <form name="myForm" onsubmit="returnvalidateForm()" action="#" method="post">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; Keziah Corpuz, 2025</p>
+  </footer>
 </body>
 </html>
