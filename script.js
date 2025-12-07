@@ -1,8 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
   const sections = document.querySelectorAll(".section");
+  const aboutSection = document.querySelectorAll(".about");
   const projectsSection = document.querySelector(".projects");
   const contactSection = document.querySelector(".contact");
 
+  const aboutBtn = document.getElementById("about");
   const projectsBtn = document.getElementById("projects");
   const contactBtn = document.getElementById("contact");
 
@@ -11,10 +13,10 @@ document.addEventListener("DOMContentLoaded", () => {
     sectionToShow.style.display = "grid";
   }
 
+  aboutBtn.addEventListener("click", () => showSection(aboutSection));
   projectsBtn.addEventListener("click", () => showSection(projectsSection));
   contactBtn.addEventListener("click", () => showSection(contactSection));
 
-  // Show/hide project details
   document.querySelectorAll(".details-btn").forEach(button => {
     button.addEventListener("click", () => {
       const details = button.nextElementSibling;
