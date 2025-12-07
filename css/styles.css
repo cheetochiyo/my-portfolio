@@ -10,19 +10,18 @@ body {
   margin: 0;
 }
 
-/* HEADER NAVIGATION */
 .nav {
   display: flex;
   background-color: var(--main-color);
   width: 100%;
   height: 120px;
   position: fixed;
-  top: 0;
-  left: 0;
   justify-content: space-between;
   align-items: center;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   padding: 10px 50px;
+  top: 0;
+  left: 0;
 }
 
 .nav-header {
@@ -42,7 +41,6 @@ body {
   cursor: pointer;
 }
 
-/* ALL SECTIONS */
 .section {
   display: none;
   margin-top: 150px;
@@ -55,7 +53,6 @@ body {
   box-sizing: border-box;
 }
 
-/* PROJECTS SECTION */
 .projects {
   display: none;
   grid-gap: 40px;
@@ -82,7 +79,6 @@ body {
   background-color: var(--hover-color);
 }
 
-/* CONTACT FORM */
 .contact form {
   display: flex;
   flex-direction: column;
@@ -110,7 +106,6 @@ body {
   background-color: var(--hover-color);
 }
 
-/* FOOTER */
 footer {
   text-align: center;
   color: white;
