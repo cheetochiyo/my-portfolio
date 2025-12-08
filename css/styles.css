@@ -53,6 +53,13 @@ body {
   box-sizing: border-box;
 }
 
+h3 {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 35px;
+}
+
 .projects {
   display: none;
   grid-gap: 40px;
