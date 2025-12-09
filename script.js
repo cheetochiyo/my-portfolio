@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const sections = document.querySelectorAll(".section");
-  const aboutSection = document.querySelectorAll(".about");
+  const aboutSection = document.querySelector(".about");
   const projectsSection = document.querySelector(".projects");
   const contactSection = document.querySelector(".contact");
 

@@ -60,6 +60,11 @@ h3 {
   line-height: 35px;
 }
 
+.sort-dropdown {
+  font-family: Helvetica, sans-serif;
+  padding: 4px;
+}
+
 .projects {
   display: none;
   grid-gap: 40px;
@@ -90,6 +95,11 @@ h3 {
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 40px;
 }
 
 .contact input,
